@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,52 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# ui-ai-generator– Deterministic Agent System
+The Overview
+This project implements a deterministic AI-powered UI generator inspired by Claude Code for UI
+The system converts natural language intent into working UI code and a live preview using a fixed, deterministic component library.
+
+Architecture
+The system uses a 3-step agent architecture:
+1. Planner
+- Interprets user intent
+- Selects target component(s)
+- Produces structured UI tree
+- Supports incremental edits
+2. Generator
+- Converts structured UI tree into JSX code
+- Uses only allowed components
+- Produces deterministic output
+3. Explainer
+- Explains decisions made by the planner
+- Clarifies incremental changes
+- Improves trust and debuggability
+
+Deterministic Component System
+Allowed Components:
+- Card
+- Button
+
+Constraints:
+- No inline styles
+- No arbitrary Tailwind generation
+- No new components created dynamically
+- All color mappings are predefined
+
+Features
+- Multi-component support
+- Incremental modification (no full rewrite)
+- Version history + rollback
+- Live preview
+- Generated JSX view
+- Explainable reasoning
+- Deterministic color mapping
+
+Safety & Validation
+- Component whitelist enforced
+- Controlled color mapping
+- Structured UI tree
+- Prevents unknown component types
+
+>>>>>>> b762679777154d3c2c61fd8f257ccc04c5c4b64d
